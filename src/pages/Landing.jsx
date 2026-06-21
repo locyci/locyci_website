@@ -9,7 +9,7 @@ const steps = [
     id: 'install',
     title: '1. Install Locci',
     description: 'Get started by installing Locci globally on your machine.',
-    command: 'npm install -g locci',
+    command: 'pip install locci',
     output: [
       { type: 'info', text: 'added 1 package, and audited 2 packages in 1s' },
       { type: 'success', text: 'Locci installed successfully! Run locci --help to get started.' }
@@ -254,7 +254,7 @@ const Landing = () => {
   }, []);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('npm install -g locci');
+    navigator.clipboard.writeText('pip install locci');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -317,7 +317,7 @@ const Landing = () => {
                 onClick={handleCopy}
                 className={`d-flex align-items-center gap-3 bg-[#000836]/80 backdrop-blur-md border ${copied ? 'border-green-500 text-green-400 shadow-[0_0_20px_rgba(34,197,94,0.2)]' : 'border-white/10 text-gray-300'} px-6 py-4 rounded-2xl hover:border-white/30 transition-all hover:-translate-y-1`}
               >
-                <span className="font-mono text-sm tracking-wide">$ npm install -g locci</span>
+                <span className="font-mono text-sm tracking-wide">$ pip install locci</span>
                 {copied ? <Check size={18} /> : <Copy size={18} />}
               </button>
             </motion.div>

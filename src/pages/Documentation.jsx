@@ -118,24 +118,23 @@ const Installation = () => (
     </Section>
 
     <Section id="installing-cli" title="Installing the CLI">
-      <p>
-        Locci is distributed as an npm package. You can install it globally using your preferred package manager.
+      <p className="text-gray-400 mb-6 leading-relaxed">
+        Locci is distributed as a Python package. You can install it using pip.
       </p>
-      <CodeBlock code="npm install -g locci" />
-      <CodeBlock code="yarn global add locci" />
+      <CodeBlock code="pip install locci" />
     </Section>
     
     <Section id="verify" title="Verify Installation">
       <p>
         Once installed, verify that the CLI is accessible by checking its version.
       </p>
-      <CodeBlock code="locci --version" />
       <div className="bg-gradient-to-r from-primary/10 to-transparent border-l-2 border-primary rounded-r-xl p-5 mt-8 shadow-lg">
-        <div className="flex gap-3">
-          <div className="text-primary mt-0.5"><Zap size={18} /></div>
+        <div className="flex gap-4">
+          <TerminalIcon size={20} className="text-primary shrink-0 mt-1" />
           <div>
-            <strong className="text-white block mb-1 font-medium">Command not found?</strong>
-            <span className="text-sm text-gray-400">If you receive a "command not found" error, ensure that your global npm/yarn bin directory is added to your system's PATH.</span>
+            <h4 className="text-white font-semibold mb-2">Check Installation</h4>
+            <CodeBlock code="locci --version" />
+            <span className="text-sm text-gray-400">If you receive a "command not found" error, ensure that your Python Scripts directory is added to your system's PATH.</span>
           </div>
         </div>
       </div>
