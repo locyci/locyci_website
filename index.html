@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locci - Lightning Fast CI/CD</title>
+    <meta name="description" content="Locci is the next-generation continuous integration tool designed for modern developers. Run your pipelines locally or centrally with blazing speed.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>Locci</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#docs">Documentation</a></li>
+            </ul>
+            <a href="https://github.com/locyci" target="_blank" class="btn-outline">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">v1.0.0 Now Available</div>
+                <h1 class="hero-title">Continuous Integration,<br><span class="text-gradient">Redefined.</span></h1>
+                <p class="hero-subtitle">
+                    Locci gives you the power of cloud-scale CI/CD right on your local machine. 
+                    Run tests, build artifacts, and deploy faster than ever before.
+                </p>
+                <div class="hero-actions">
+                    <a href="#get-started" class="btn-primary">Get Started</a>
+                    <button class="btn-copy" id="copyBtn">
+                        <span class="code-font">$ npm install -g locci</span>
+                        <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="mac-btns">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">locci-pipeline ~ bash</div>
+                    </div>
+                    <div class="terminal-body code-font">
+                        <div class="line"><span class="prompt">❯</span> locci run build</div>
+                        <div class="line text-dim">Starting pipeline for project 'locyci_website'...</div>
+                        <div class="line text-success">✓ [Setup] Environment prepared in 0.4s</div>
+                        <div class="line text-success">✓ [Lint] ESLint passed in 1.2s</div>
+                        <div class="line text-success">✓ [Build] Assets bundled in 2.1s</div>
+                        <div class="line"><span class="text-info">ℹ</span> Pipeline completed successfully in 3.7s!</div>
+                        <div class="line mt"><span class="prompt border-blink"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-heading">
+                <h2>Why choose Locci?</h2>
+                <p>Designed from the ground up for developer productivity and maximum performance.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon icon-fast"></div>
+                    <h3>Blazing Fast</h3>
+                    <p>Written in Rust and optimized for speed. Locci caches your dependencies and parallelizes your tasks to shave minutes off your build times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-local"></div>
+                    <h3>Run Anywhere</h3>
+                    <p>Test your CI pipelines exactly as they would run on the cloud, right from your local terminal. No more "push and pray".</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-secure"></div>
+                    <h3>Secure by Design</h3>
+                    <p>Zero-trust architecture with ephemeral environments. Your secrets never leave your machine unless you explicitly tell them to.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-box">
+                <h2>Ready to supercharge your workflow?</h2>
+                <p>Join the open-source community building the future of continuous integration.</p>
+                <a href="https://github.com/locyci/locci" target="_blank" class="btn-primary">View Documentation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Locci</span>
+                </div>
+                <p>The modern, lightweight CI/CD tool.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">CLI Reference</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="link-group">
+                    <h4>Community</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LocyCI Organization. Open Source under MIT License.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
